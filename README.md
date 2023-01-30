@@ -12,14 +12,17 @@ Description of the method: My approach consists of the following components comb
 7. The weighted rate of a business (column name: useful bus rate): A business review will be given more weight if more users have given it the rating of "useful." 
 To save execution time, I keep track of the coefficients and intersections for each part and apply them to data.
 
+
 Error Distribution:
 
->=0 and <1: 41286 
->=1 and <2: 15244 
->=2 and <3: 5260
->=3 and <4: 795
->=4: 1
+#### >= 0 and < 1: 41286,
+#### >= 1 and < 2: 15244,
+#### >= 2 and < 3: 5260,
+#### >= 3 and < 4: 795,
+#### >= 4: 1
 
 
-RMSE: 0.9796709211544142
-Time: 660 sec
+
+#### RMSE: 0.9796709211544142
+
+#### Time: 660 sec
