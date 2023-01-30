@@ -3,14 +3,13 @@
 
 Description of the method: My approach consists of the following components combined linearly:
 
-1. I used the similar method in hwk3 to determine item-based CF prediction.
-2. XGBregressor: I use the same procedure as in hwk3 to generate XGBregressor prediction, but I make some adjustments for better results.
-3. Take from business the average rate for each business (column name: bus mean). 
-4. Take from the business the review count for each company (column name: bus review count).
-5. Take the user.json value from average stars to get the user's average rating (column name: user mean).
-6. Take from user.json->useful the number of usefuls received by the user (column name: user useful).
-7. The weighted rate of a business (column name: useful bus rate): A business review will be given more weight if more users have given it the rating of "useful." 
-To save execution time, I keep track of the coefficients and intersections for each part and apply them to data.
+1. I used a similar method to hwk3 to determine the item-based CF prediction.
+2. XGBregressor: I used the same procedure as in hwk3 to generate XGBregressor prediction, but I made some adjustments for better results.3. Took the average rate for each business from business (column name: bus mean). 
+4. Took  the review count for each business from the business (column name: bus review count).
+5. From user.json, took average stars value to get the user's average rating (column name: user mean).
+6. From user.json-> the number of "useful"s sent by the user (column name: user useful).
+7. The weighted rate of a business (column name: useful bus rate)-> A business review will be given more weight if more users have rated it "useful".
+To reduce complexity and execution time, I kept track of the coefficients and intersections for each part and applied them to the data.
 
 
 Error Distribution:
