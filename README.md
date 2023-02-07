@@ -1,5 +1,6 @@
 ## Yelp Recommendation System
 
+*** Some files were too large to upload, even when compressed. ***
 
 Description of the method: My approach consists of the following components combined linearly:
 
